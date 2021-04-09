@@ -6,13 +6,11 @@
 // tslint:disable-next-line:max-line-length
 // import { firebaseConfig } from '../environments/firebase-config'; // please comment on this line when changing the values ​​of firebase {}
 
+
 export const environment = {
-  production: false,
-  version: require('../../package.json').version, // https://stackoverflow.com/questions/34907682/how-to-display-app-version-in-angular2
-  remoteConfig: true,
-  remoteConfigUrl: '/widget-config.json',
-  remoteTranslationsUrl: 'http://localhost:3000/',
-  loadRemoteTranslations: true,
+  production: true,
+  version: require('../../package.json').version,
+  remoteConfig: false, // for performance don't load settings from remote
   firebase: {
     apiKey: 'CHANGEIT',
     authDomain: 'CHANGEIT',
@@ -21,7 +19,7 @@ export const environment = {
     storageBucket: 'CHANGEIT',
     messagingSenderId: 'CHANGEIT'
   },
-  apiUrl: 'http://localhost:3000/',
+  apiUrl: 'https://project-221841443380/',
   tenant: 'tilechat',
   defaultLang : 'en',
   shemaVersion : '1'
