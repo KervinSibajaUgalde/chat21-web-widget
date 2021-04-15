@@ -70,7 +70,7 @@ export const it = {
     'LABEL_FIELD_EMAIL': 'Email',
     'LABEL_ERROR_FIELD_EMAIL': 'Inserisci un indirizzo email valido.',
     'LABEL_WRITING': 'sta scrivendo...',
-    'LABEL_SEND_NEW_MESSAGE': 'Invia un nuovo messaggio',
+    'LABEL_SEND_NEW_MESSAGE': 'Envía un nuevo mensaje',
     'AGENT_NOT_AVAILABLE': ' Offline',
     'AGENT_AVAILABLE': ' Online',
     'GUEST_LABEL': 'Ospite',

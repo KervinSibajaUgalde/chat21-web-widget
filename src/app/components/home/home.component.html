@@ -32,7 +32,7 @@
                 <div *ngIf="g.project.logoChat !== 'nologo'" class='avatar-project' item-start>
                     <!-- <div *ngIf="g.project.logoChat == 'tiledesklogo'" #avatarPlaceholder class="avatar-placeholder" [style.background-color]="g.project.color" [innerHTML]="g.project.avatar"></div>
                     <div *ngIf="g.project.logoChat !== 'tiledesklogo'" #avatarImage class="avatar-image" [style.background-image]="'url(' + g.project.logoChat + ')'"></div> -->
-                    <div #avatarImage class="avatar-image" [style.background-image]="'url(' + g.project.logoChat + ')'"></div>
+                    <div #avatarImage class="avatar-image" [style.background-image]="'url(' + g.project.logoChat + ')'" style="max-height: 45px!important;"></div>
                 </div>
 
                 <!-- <div *ngIf="g.logoChat == 'tiledesklogo'" class="c21-logo fade-in-bottom">
@@ -56,12 +56,12 @@
 
 
     <!-- CONTENT -->
-    <div class="c21-body" (click)="hideMenuOptions()">
+    <div class="c21-body" (click)="hideMenuOptions()" style="background-color: #e8e8e8;">
 
         <!-- <div class="c21-body-container"> -->
             <div class="c21-body-content" [class.nologo]="g.project.logoChat === 'nologo'">
                 <div class="c21-cards">
-                    <div class="c21-card fade-in-top" [ngStyle]="{ 'border-top': '2.4px solid', 'border-top-color': g.themeColor50 }">
+                    <div class="c21-card fade-in-top" [ngStyle]="{ 'border-top': '2.4px solid', 'border-top-color': g.themeColor50 }" style="border-radius: 20px;">
                         <tiledeskwidget-list-conversations 
                         [senderId]="senderId"
                         (eventNewConv)="returnNewConversation()" 
@@ -80,13 +80,13 @@
 
 
     <!-- FOOTER -->
-    <div class="c21-footer fade-in-bottom-footer">
+    <div class="c21-footer fade-in-bottom-footer" style="background-color: white;height: 60px;clear: both;">
         <tiledeskwidget-menu-options
         (eventSignOut)="returnSignOut()" 
         ></tiledeskwidget-menu-options>
         <div id="c21-powered-by">
-            <div tabindex="-1" class="c21-powered-by" [innerHTML]="g.poweredBy"></div>
-            <div class="build_version">{{g.BUILD_VERSION}}</div>
+            <div tabindex="-1" class="c21-powered-by" style="margin-top: 25px;margin-bottom: 10px;"><span style="color: #B7BBC4;position: relative; top: -8px; display: inline-block;text-transform: uppercase;line-height: 20px;font-size: 12px;">Desarrollado por</span><img src="../../assets/images/facture_textc.png" style="display: inline-block;height: 20px;margin-left: 9px;"></div>
+            <div class="build_version" style="top: 18px;">©2021 Fonox / Facture.CR</div>
         </div>
     </div>
 

@@ -40,13 +40,13 @@
       <button tabindex="1103" class="c21-item-conversation" (click)="openConversationByID(conversation)">
         <div class="c21-body-conv">
           <div class="c21-left-conv">
-              <div class="c21-ball" [style.background-color]="conversation.color" >
+              <div class="c21-ball" style="background-color: #e29f3c;" >
                 <span class="c21-ball-label" [innerHTML]="conversation.avatar"></span>
                 <div *ngIf="conversation.image" #avatarImage class="c21-avatar-image" [style.background-image]="'url(' + conversation.image + ')'"></div>
               </div>
           </div>
           <div class="c21-right-conv">
-            <div class="c21-last-time">{{conversation.time_last_message}}</div>
+            <div class="c21-last-time" style="font-size: 1.0em!important;">{{conversation.time_last_message}}</div>
             <div class="truncate c21-name">{{conversation.sender_fullname }}</div>
             <div [class.not-read]="conversation.is_new" class="truncate c21-msg" [innerHTML]="conversation.last_message_text"></div>
           </div>
@@ -61,7 +61,7 @@
       <div *ngFor="let agent of availableAgents" class="c21-pallozzo">
           <div class="c21-ball" [ngStyle] = "{ 'background-color':setColorFromString(agent.firstname) }" >
             <span class="c21-ball-label">{{avatarPlaceholder(agent.firstname)}}</span>
-            <div *ngIf="agent.imageurl" #avatarImage class="c21-avatar-image" [style.background-image]="'url(' + agent.imageurl + ')'"></div>
+            <div *ngIf="agent.imageurl" #avatarImage class="c21-avatar-image" style="transform: rotate(270deg);" [style.background-image]="'url(' + agent.imageurl + ')'"></div>
           </div>
         </div>
     </div>

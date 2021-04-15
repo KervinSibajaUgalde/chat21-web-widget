@@ -1,8 +1,8 @@
-<div id='c21-app-list-all-conversations'>
+<div id='c21-app-list-all-conversations' style="background: aliceblue;">
 <!-- tabindex="1300"-->
 
   <!-- HEADER -->
-  <div class="c21-header" [ngStyle]="{'background-color': g.themeColor}">
+  <div class="c21-header" [ngStyle]="{'background-color': g.themeColor}" style="box-shadow: 0px 3px 10px 0px #0000004f;">
     <div class="c21-header-container">
       <!-- CONTENT HEADER -->
       <div class="c21-header-content">
@@ -70,7 +70,7 @@
             <div *ngIf="g.project.logoChat == 'tiledesklogo'" #avatarPlaceholder class="avatar-placeholder" [style.background-color]="g.project.color" [innerHTML]="g.project.avatar"></div>
             <div *ngIf="g.project.logoChat !== 'tiledesklogo'" #avatarImage class="avatar-image" [style.background-image]="'url(' + g.project.logoChat + ')'"></div>
           </div> -->
-          <div class="titleText">{{g.project.widgetTitle}}</div>
+          <div class="titleText">Volver atras / Facture.cr soporte</div>
           <!-- <span id="agent-available-status">{{areAgentsAvailableText}}</span> -->
         </div>
         <!-- <p class="c21-header-writing">{{writingMessage}}</p> -->
@@ -88,7 +88,7 @@
       <button start-focus #afallconv tabindex="1301" class="c21-item-conversation c21-button-clean" (click)="openConversationByID(conversation)">
         <div class="c21-body-conv">
           <div class="c21-left-conv">
-            <div class="c21-ball" [style.background-color]="conversation.color" >
+            <div class="c21-ball" style="background-color: #e29f3c;" >
               <span class="c21-ball-label" [innerHTML]="conversation.avatar"></span>
               <div *ngIf="conversation.image" #avatarImage class="c21-avatar-image" [style.background-image]="'url(' + conversation.image + ')'"></div>
             </div>
@@ -104,7 +104,7 @@
             </div> -->
           </div>
           <div class="c21-right-conv">
-            <div class="c21-last-time">{{conversation.time_last_message}}</div>
+            <div class="c21-last-time" style="font-size: 1.0em!important;">{{conversation.time_last_message}}</div>
             <div class="truncate c21-name">{{conversation.sender_fullname }}</div>
             <div [class.not-read]="conversation.is_new" class="truncate c21-msg" [innerHTML]="conversation.last_message_text"></div>
           </div>

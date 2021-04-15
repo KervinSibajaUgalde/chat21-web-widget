@@ -181,10 +181,12 @@
 
 
         .c21-item-conversation {
+            box-shadow: 0px 1px 2px 0px #0000004f;
             width: 100%;
             height: auto;
             position: relative;
-            margin: auto;
+            border-radius: 25px;
+            margin: 3px;
             padding: 0px 0px;
             cursor: pointer;
             -webkit-appearance: initial;
@@ -257,7 +259,7 @@
                     float: left;
                     padding: 17px 0;
                     .c21-last-time {
-                        font-size: 0.8em;
+                        font-size: 1.0em;
                         color: #aaaaaa;
                         float: right;
                         display: block;

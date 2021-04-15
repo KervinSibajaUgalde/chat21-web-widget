@@ -8,19 +8,22 @@
 
 
 export const environment = {
-  production: true,
+  production: false,
   version: require('../../package.json').version,
-  remoteConfig: false, // for performance don't load settings from remote
+  remoteConfig: false,
+  remoteConfigUrl: '/widget-config.json',
+  remoteTranslationsUrl: 'http://localhost:3000/',
+  loadRemoteTranslations: true,
   firebase: {
-    apiKey: 'CHANGEIT',
-    authDomain: 'CHANGEIT',
-    databaseURL: 'CHANGEIT',
-    projectId: 'CHANGEIT',
-    storageBucket: 'CHANGEIT',
-    messagingSenderId: 'CHANGEIT'
+    apiKey: 'AIzaSyCCXlqBMquWntJLBseu6qNTM-mTrMfYFW8',
+    authDomain: 'tiledesk-facture-dev.firebaseapp.com',
+    databaseURL: 'https://tiledesk-facture-dev-default-rtdb.firebaseio.com/',
+    projectId: 'tiledesk-facture-dev',
+    storageBucket: 'tiledesk-facture-dev.appspot.com',
+    messagingSenderId: '82084183603'
   },
-  apiUrl: 'https://project-221841443380/',
+  apiUrl: 'http://localhost:3000/',
   tenant: 'tilechat',
-  defaultLang : 'en',
+  defaultLang : 'es',
   shemaVersion : '1'
 };

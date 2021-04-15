@@ -1,5 +1,5 @@
 {
-    "LABEL_PLACEHOLDER": "escribe tu mensaje..",
+    "LABEL_PLACEHOLDER": "escribe tu mensaje...",
     "LABEL_START_NW_CONV": "Nueva conversación",
     "LABEL_FIRST_MSG": "Describa brevemente su problema, un agente lo contactará.",
     "LABEL_FIRST_MSG_NO_AGENTS": "🤔 Todos los operadores están desconectados en este momento. De todos modos puedes describir tu problema. Se asignará al equipo de soporte que le responderá lo antes posible.",

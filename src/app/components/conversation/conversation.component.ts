@@ -170,7 +170,7 @@ export class ConversationComponent implements OnInit, AfterViewInit, OnChanges, 
   ) {
     this.API_URL = this.appConfigService.getConfig().apiUrl;
     this.g.wdLog([' constructor conversation component ']);
-    this.LABEL_SEND_NEW_MESSAGE = 'Invia un nuovo messaggio'; // this.g.LABEL_SEND_NEW_MESSAGE;
+    this.LABEL_SEND_NEW_MESSAGE = 'Envía un nuevo mensaje'; // this.g.LABEL_SEND_NEW_MESSAGE;
   }
 
 
